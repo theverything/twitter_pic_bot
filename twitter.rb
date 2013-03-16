@@ -2,7 +2,6 @@ require 'twitter'
 require './twitter_keys.rb'
 
 class Post
-
   include TwitterKeys
 
   def initialize(reddit)
@@ -26,5 +25,4 @@ class Post
     post_build << "#earthporn"
     post_build.join(" ")
   end
-
 end

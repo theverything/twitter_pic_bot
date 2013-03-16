@@ -2,8 +2,6 @@ require 'net/http'
 require 'json'
 
 class Reddit
-  attr_reader :uri, :json
-
   def initialize(subreddit, post_num)
     uri = URI("http://www.reddit.com/r/#{subreddit}.json")
     json = Net::HTTP.get(uri)
@@ -26,5 +24,4 @@ class Reddit
   def get_url
     @post["url"]    
   end
-
 end
