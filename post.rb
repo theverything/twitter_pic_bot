@@ -13,6 +13,7 @@ def post_cycle
     Logger.write "Duplicate... I'll try again in 15 mins"
     sleep 900
   end
+end
 
 
 loop do
